@@ -1,0 +1,15 @@
+{% extends 'CodeSource/Header.html' %}
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+<div class="container" style="text-align:center;">
+<div class="row">
+<div class="col-md-12">
+<video controls autoplay height="500px">
+<source src="../../static/Videos/{{object.file}}" />
+</video>
+<h1 style="color:rgb(10,150,220);"><u>{{object.name}}</u> -- {{object.table}} project.<br/></h1>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

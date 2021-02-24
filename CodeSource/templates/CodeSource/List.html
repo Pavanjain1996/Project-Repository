@@ -1,0 +1,14 @@
+{% extends 'CodeSource/Header.html' %}
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+<div class="container" style="text-align:center;">
+{% for object in object_list %}
+<div class="row">
+<div class="col-md-12">
+<a href="/{{object.table}}/{{object.id}}"><span style="font-size:30px;padding:10px;text-decoration:underline;font-family:comic sans ms;color:rgb(10,150,220);">{{object.name}}</span></a>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+{% endblock %}

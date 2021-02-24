@@ -1,0 +1,47 @@
+{% extends 'CodeSource/Header.html' %}
+{% block content %}
+{% load staticfiles %}
+<div class="jumbotron jumbotron-fluid">
+<div class="container" style="text-align:center;">
+<div class="row" style="font-size:20px;">
+<div class="col-md-6" style="width:600px;text-align:center;">
+<img src="{% static 'Images/Console.png' %}" width="250px" height="150px" />
+</div>
+<div class="col-md-6" style="width:600px;text-align:center;">
+<a href="/Console"><h2 style="color:red;text-decoration:underline;">Console Projects</h2></a>
+<p>These are the console level projects which are developed in C and C++.</p>
+</div>
+</div>
+<br/>
+<div class="row" style="font-size:20px;">
+<div class="col-md-6" style="width:600px;text-align:center;">
+<img src="{% static 'Images/Desktop.png' %}" width="250px" height="150px" />
+</div>
+<div class="col-md-6" style="width:600px;text-align:center;">
+<a href="/Desktop"><h2 style="color:red;text-decoration:underline;">Desktop Projects</h2></a>
+<p>These are the desktop applications made in Standard Java and Enterprise Java.</p>
+</div>
+</div>
+<br/>
+<div class="row" style="font-size:20px;">
+<div class="col-md-6" style="width:600px;text-align:center;">
+<img src="{% static 'Images/Web.png' %}" width="250px" height="150px" />
+</div>
+<div class="col-md-6" style="width:600px;text-align:center;">
+<a href="/Web"><h2 style="color:red;text-decoration:underline;">Web Projects</h2></a>
+<p>The are the web applications made in HTML, CSS, JavaScript, PHP and MySQL.</p>
+</div>
+</div>
+<br/>
+<div class="row" style="font-size:20px;">
+<div class="col-md-6" style="width:600px;text-align:center;">
+<img src="{% static 'Images/PPython.png' %}" width="250px" height="150px" />
+</div>
+<div class="col-md-6" style="width:600px;text-align:center;">
+<a href="/Python"><h2 style="color:red;text-decoration:underline;">Python Projects</h2></a>
+<p>These are the python applications made using various frameworks of python like Django and various modules like RE and TURTLE.</p>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
